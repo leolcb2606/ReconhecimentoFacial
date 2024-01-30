@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteção Facial</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload de Imagem para Detecção Facial</h1>
+        <form action="/detect_faces" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*">
+            <button type="submit">Detectar Rostos</button>
+        </form>
+
+        {% if result_path %}
+            <h2>Imagem Original:</h2>
+            <img src="{{ url_for('static', filename='uploads/user_image.jpg') }}" alt="Imagem Original">
+
+            <h2>Rosto Recortado:</h2>
+            <img src="{{ url_for('static', filename='uploads/output.jpg') }}" alt="Rosto Recortado">
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* static/styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffff
+    ;
+}
+
+.container {
+    background-color: #f1f1f1;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #ffc107; /* Amarelo */
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #e0a800; /* Amarelo mais escuro ao passar o mouse */
+}
+
+img {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 4px;
+}
